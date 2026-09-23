@@ -495,6 +495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 293468630}
   - component: {fileID: 293468631}
+  - component: {fileID: 293468632}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -540,6 +541,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.79844975, y: 2.0840192, z: 0.7852988}
   m_Center: {x: 0.013285875, y: 1.0315454, z: 0.02012813}
+--- !u!114 &293468632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293468629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0cbbafebd9fc274da257c8ed0cf5b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  healthSlider: {fileID: 9122198282562485310}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &300083831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1621,6 +1641,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 691090160}
+  - component: {fileID: 691090161}
   m_Layer: 0
   m_Name: Lanes2
   m_TagString: Untagged
@@ -1653,6 +1674,29 @@ Transform:
   - {fileID: 479642349}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &691090161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691090159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8563ea1a90572bf4ebb3b6e6a7c04e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lane
+  zones:
+  - {fileID: 4466412}
+  - {fileID: 1532491338}
+  - {fileID: 1702319122}
+  - {fileID: 843434486}
+  - {fileID: 1763072972}
+  - {fileID: 2123890887}
+  - {fileID: 1276346051}
+  - {fileID: 1508921100}
+  - {fileID: 489772308}
+  laneStart: {fileID: 479642349}
 --- !u!1001 &730948842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3129,6 +3173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1605141069}
+  - component: {fileID: 1605141070}
   m_Layer: 0
   m_Name: Lanes
   m_TagString: Untagged
@@ -3161,6 +3206,29 @@ Transform:
   - {fileID: 1461326573}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1605141070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605141068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8563ea1a90572bf4ebb3b6e6a7c04e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lane
+  zones:
+  - {fileID: 1387067331}
+  - {fileID: 687119239}
+  - {fileID: 1724743443}
+  - {fileID: 425485556}
+  - {fileID: 146686866}
+  - {fileID: 101257171}
+  - {fileID: 660276909}
+  - {fileID: 1138382113}
+  - {fileID: 483544440}
+  laneStart: {fileID: 1461326573}
 --- !u!1001 &1610114215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4661,6 +4729,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2370613910181537206, guid: e7bdbad7bb5e1bb48ae2488bfbb1fe31, type: 3}
   m_PrefabInstance: {fileID: 9122198282562485308}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9122198282562485310 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5317367476855490425, guid: e7bdbad7bb5e1bb48ae2488bfbb1fe31, type: 3}
+  m_PrefabInstance: {fileID: 9122198282562485308}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
