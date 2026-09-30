@@ -18,10 +18,12 @@ public class Zombie : Character
     public override void Die()
     {
         ActiveTargetDetection(false);
+        SoundManager.instance.Play(zombieData.deathSound);
         base.Die();
     }
     private void OnEnable()
     {
+        SoundManager.instance.Play(zombieData.appearSound);
         currentTarget = null;
         canAttack = true;
         ActiveTargetDetection(true);
@@ -59,9 +61,11 @@ public class Zombie : Character
     private IEnumerator PerformAttack()
     {
         canAttack = false;
+        SoundManager.instance.Play(zombieData.attackSound);
         characterAniamtor.Play("Attack", 0, 0f);
         yield return new WaitForSeconds(zombieData.attackCooldown);
         currentTarget.TakeDamage(zombieData.damage);
+        PoolManager.Instance.GetObject(zombieData.attackParticles, currentTarget.transform.position);
         if (currentTarget.IsDead) currentTarget = null;
         yield return new  WaitForSeconds(zombieData.attackCooldown);
         canAttack = true;
