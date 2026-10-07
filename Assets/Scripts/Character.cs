@@ -20,8 +20,20 @@ public class Character : MonoBehaviour
     }
     private IEnumerator DieCoroutine()
     {
-        characterAniamtor.Play("Die", 0, 0f);
+        characterAniamtor.Play("Death", 0, 0f);
         yield return characterAniamtor.WaitForCurrentAnimation();
+        //yield return StartCoroutine(blinkCharacterCoroutine());
         gameObject.SetActive(false);
+    }
+    private IEnumerator blinkCharacterCoroutine()
+    {
+        float blinkDuration = 0.1f;
+        int blinkCount = 5;
+        for (int i = 0; i < blinkCount; i++)
+        {
+            characterAniamtor.gameObject.SetActive(!characterAniamtor.gameObject.activeSelf);
+            yield return new WaitForSeconds(blinkDuration);
+        }
+        characterAniamtor.gameObject.SetActive(true);
     }
 }
