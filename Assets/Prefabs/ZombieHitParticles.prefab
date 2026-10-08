@@ -19215,7 +19215,7 @@ GameObject:
   - component: {fileID: 8895573642521358547}
   - component: {fileID: 3803461547209453548}
   m_Layer: 0
-  m_Name: ZombieHotParticles
+  m_Name: ZombieHitParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
