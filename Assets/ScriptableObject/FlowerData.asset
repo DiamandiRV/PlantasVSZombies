@@ -17,7 +17,7 @@ MonoBehaviour:
   deathSound: sunflower_death
   maxHealth: 100
   sunPrefab: {fileID: 4014583647812467850, guid: 8b507d0a44d999a4d88e56e61c73c66b, type: 3}
-  sunOffsetY: 2
+  sunOffsetY: 1
   sunInterval: 5
   sunAmount: 1
   sunParticlePrefab: {fileID: 2380826982614650661, guid: 71fd04f49744e1340b16c50ffcb15b5f, type: 3}

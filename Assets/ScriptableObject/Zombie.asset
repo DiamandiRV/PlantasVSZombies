@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Zombie
   m_EditorClassIdentifier: Assembly-CSharp::ZombieData
   maxHealth: 100
-  moveSpeed: 0.75
+  moveSpeed: 0.1
   damage: 25
   attackRange: 2
   attackCooldown: 2
