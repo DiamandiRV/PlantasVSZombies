@@ -118,6 +118,7 @@ MonoBehaviour:
   characterAniamtor: {fileID: 4504326076273278899}
   initialRotationY: 90
   blinkDuration: 3
+  price: 25
   flowerData: {fileID: 11400000, guid: 207926e2763c5514aa955da172ed1741, type: 2}
   zoneDetector: {fileID: 163328907182099369}
 --- !u!1 &1925589260335725898

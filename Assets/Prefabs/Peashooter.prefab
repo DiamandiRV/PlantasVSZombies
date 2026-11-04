@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 3100242341729028073}
   - component: {fileID: 6999196380654256549}
   - component: {fileID: 5127486717406684163}
+  - component: {fileID: 2181260493420094304}
   m_Layer: 7
   m_Name: Peashooter
   m_TagString: Plant
@@ -135,6 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Peashooter
   characterAniamtor: {fileID: 3581367434282679817}
   initialRotationY: 90
+  blinkDuration: 3
+  price: 2
   shooterPlantData: {fileID: 11400000, guid: c560cb2271971724ab54c6c0f07ab257, type: 2}
   shootPivot: {fileID: 1231700118983387932}
 --- !u!114 &5127486717406684163
@@ -154,6 +157,19 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &2181260493420094304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7085217013592072190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23d26a26e9dd8974e9cd877cd914f815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Blink
+  blinkInterval: 0.2
 --- !u!1001 &1227686944927964755
 PrefabInstance:
   m_ObjectHideFlags: 0
