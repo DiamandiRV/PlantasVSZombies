@@ -9,6 +9,8 @@ public class Zombie : Character
     private DetectTarget detectTarget;
     private Health currentTarget;
     public event Action<Zombie> onDie;
+    public event Action onWin;
+    private bool hasWon;
     private bool canAttack;
     protected override void Awake()
     {
@@ -16,6 +18,14 @@ public class Zombie : Character
         health.SetMaxHealth(zombieData.maxHealth);
         detectTarget = GetComponent<DetectTarget>();
         detectTarget.SetRange(zombieData.attackRange);
+    }
+    public void Win()
+    {
+        characterAniamtor.Play("Dance");
+        hasWon = true;
+        StopAllCoroutines();
+        characterCollider.enabled = false;
+        ActiveTargetDetection(false);
     }
     public override void Die()
     {
@@ -52,7 +62,7 @@ public class Zombie : Character
     }
     private void Update()
     {
-        if(health.IsDead) return;
+        if(health.IsDead || hasWon) return;
         if(currentTarget == null)
         {
             Move();
@@ -60,6 +70,13 @@ public class Zombie : Character
         else
         {
             Attack();
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("House"))
+        {
+            onWin?.Invoke();
         }
     }
     private void Attack()
