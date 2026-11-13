@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wallnut
   characterAniamtor: {fileID: 7272376421342546409}
-  initialRotationY: 0
+  initialRotationY: -90
   blinkDuration: 3
   price: 50
   maxHealth: 100
