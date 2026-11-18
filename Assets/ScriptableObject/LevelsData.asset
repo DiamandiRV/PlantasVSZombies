@@ -29,6 +29,10 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 12
       laneIndex: 4
+    cardLevels:
+    - cardPrefab: {fileID: 1573393847867445438, guid: 4535f6c0716b9414ebdb04f9568d1c3e, type: 3}
+    - cardPrefab: {fileID: 8226919559906657196, guid: 708da48bef8084543928dcd188ff01ed, type: 3}
+    - cardPrefab: {fileID: 3280285944669120977, guid: 322e5c3e309876a4793238ed98edc42d, type: 3}
   - enemies:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 2
@@ -54,6 +58,10 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 20
       laneIndex: 1
+    cardLevels:
+    - cardPrefab: {fileID: 1573393847867445438, guid: 4535f6c0716b9414ebdb04f9568d1c3e, type: 3}
+    - cardPrefab: {fileID: 8226919559906657196, guid: 708da48bef8084543928dcd188ff01ed, type: 3}
+    - cardPrefab: {fileID: 3280285944669120977, guid: 322e5c3e309876a4793238ed98edc42d, type: 3}
   - enemies:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 2
@@ -88,6 +96,10 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 16
       laneIndex: 1
+    cardLevels:
+    - cardPrefab: {fileID: 1573393847867445438, guid: 4535f6c0716b9414ebdb04f9568d1c3e, type: 3}
+    - cardPrefab: {fileID: 8226919559906657196, guid: 708da48bef8084543928dcd188ff01ed, type: 3}
+    - cardPrefab: {fileID: 3280285944669120977, guid: 322e5c3e309876a4793238ed98edc42d, type: 3}
   - enemies:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 2
@@ -116,4 +128,8 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 25
       laneIndex: 2
+    cardLevels:
+    - cardPrefab: {fileID: 1573393847867445438, guid: 4535f6c0716b9414ebdb04f9568d1c3e, type: 3}
+    - cardPrefab: {fileID: 8226919559906657196, guid: 708da48bef8084543928dcd188ff01ed, type: 3}
+    - cardPrefab: {fileID: 3280285944669120977, guid: 322e5c3e309876a4793238ed98edc42d, type: 3}
   currentIndex: 1
