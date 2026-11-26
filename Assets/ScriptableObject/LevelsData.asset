@@ -29,7 +29,10 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 12
       laneIndex: 4
-    cardLevels: 0000000001000000
+    cardLevels:
+    - {fileID: 1573393847867445438, guid: 4535f6c0716b9414ebdb04f9568d1c3e, type: 3}
+    - {fileID: 8226919559906657196, guid: 708da48bef8084543928dcd188ff01ed, type: 3}
+    skyboxMaterial: {fileID: 2100000, guid: 67950864b84c5db4f9eee7ca51c85571, type: 2}
   - enemies:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 2
@@ -55,7 +58,11 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 20
       laneIndex: 1
-    cardLevels: 000000000100000002000000
+    cardLevels:
+    - {fileID: 1573393847867445438, guid: 4535f6c0716b9414ebdb04f9568d1c3e, type: 3}
+    - {fileID: 8226919559906657196, guid: 708da48bef8084543928dcd188ff01ed, type: 3}
+    - {fileID: 3280285944669120977, guid: 322e5c3e309876a4793238ed98edc42d, type: 3}
+    skyboxMaterial: {fileID: 2100000, guid: fa95802f80bd745cfb5e9c89f7e22341, type: 2}
   - enemies:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 2
@@ -90,7 +97,11 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 16
       laneIndex: 1
-    cardLevels: 000000000300000001000000
+    cardLevels:
+    - {fileID: 1573393847867445438, guid: 4535f6c0716b9414ebdb04f9568d1c3e, type: 3}
+    - {fileID: 401805377539939881, guid: b433dd4b0f7236745aaf2fd88c43838e, type: 3}
+    - {fileID: 8226919559906657196, guid: 708da48bef8084543928dcd188ff01ed, type: 3}
+    skyboxMaterial: {fileID: 2100000, guid: 94caf2ba4ca5e46bfaba53afcc8778dd, type: 2}
   - enemies:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 2
@@ -119,5 +130,10 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 4738039029144399704, guid: b788f4cb14d859542bcd14a39891792a, type: 3}
       spawnTime: 25
       laneIndex: 2
-    cardLevels: 00000000010000000200000003000000
-  currentIndex: 1
+    cardLevels:
+    - {fileID: 1573393847867445438, guid: 4535f6c0716b9414ebdb04f9568d1c3e, type: 3}
+    - {fileID: 8226919559906657196, guid: 708da48bef8084543928dcd188ff01ed, type: 3}
+    - {fileID: 5601134439056996901, guid: da4eb53f005aeae46914153d27dad7d9, type: 3}
+    - {fileID: 401805377539939881, guid: b433dd4b0f7236745aaf2fd88c43838e, type: 3}
+    skyboxMaterial: {fileID: 2100000, guid: de1d750fefeeac642bf9b11a3978ccf5, type: 2}
+  currentIndex: 3
